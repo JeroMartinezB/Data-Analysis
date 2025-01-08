@@ -17,7 +17,9 @@ After plotting and normalizing the type of interaction the movie has received ve
 
 **-Among all the factors we considered in the last two models, which one is the best predictor of movie rating?**
 
+Among all the factors considered we could argue that the budget feature is the best predictor for the movie rating, as even though the data remains scattered, there is a stronger relation compared to the other factors.
 
-
+With the budget feature being the best predictor for movie ratings we will use gradient descent to find the optimal intercept (bias) and gradient (weight) for the dataset.
+ 
 
 
