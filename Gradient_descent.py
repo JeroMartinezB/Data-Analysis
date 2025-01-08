@@ -1,8 +1,3 @@
-# Jeronimo Martinez Barragan
-# CSC 362
-# Assignment 6
-# Worked together with Wyatt Walsh on this question
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
