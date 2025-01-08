@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def normalize(df, feature_1):
     df[feature_1] = df[feature_1] / df[feature_1].abs().max()
 
-# Plot the features
+# Plot the features (Can be reused for every feature) 
 def plot(df):
     for column in ["Likes", "Dislikes", "Comments"]:
         normalize(df, column)
@@ -65,8 +65,10 @@ for i in range(5000):
     loss = np.divide(np.sum((ratings-y)**2, axis =0), budget.shape[0])
     if i%1000 == True:
         print(f'Iteration {i} loss value is {loss}, parameters weight: {weight}, bias: {bias}')
+        
+# Optimal values
 print(f'The optimal gradient value is {weight}, and the optimal intercept value is {bias}')
-plot(data_frame)
+
 
 
 
